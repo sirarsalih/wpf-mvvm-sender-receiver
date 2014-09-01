@@ -1,0 +1,18 @@
+﻿<Window x:Class="WPFMVVM.IteraFagDag.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:View="clr-namespace:WPFMVVM.IteraFagDag.View"
+        Title="MainWindow" Height="350" Width="525">
+   <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <View:ReceiverView Grid.Row="0" Grid.Column="0" />
+        <View:SenderView Grid.Row="0" Grid.Column="1" />
+        <GridSplitter HorizontalAlignment="Left" Width="5" Height="320" Margin="245,0,0,-21"/>
+    </Grid>
+</Window>
